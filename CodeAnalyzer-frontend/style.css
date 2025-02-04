@@ -1,0 +1,77 @@
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #00b4d8, #90e0ef);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 8s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.code-input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #2a2a4a;
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+  transition: all 0.3s ease;
+}
+
+.code-input:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #00b4d8;
+  box-shadow: 0 0 10px rgba(0, 180, 216, 0.3);
+}
+
+.gradient-btn {
+  background: linear-gradient(45deg, #00b4d8, #0077b6);
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.gradient-btn:hover {
+  transform: scale(1.05);
+}
+
+.result-card {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #2a2a4a;
+  color: #ffffff;
+}
+
+#resultText {
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Section Colors */
+.bug-text { color: #ff6b6b; }
+.optimization-text { color: #4cd964; }
+.best-practice-text { color: #90e0ef; }
+.security-text { color: #ff4c4c; }
+.note-text { color: #f48c06; }
+
+.alert-danger {
+  background: linear-gradient(135deg, #ff6b6b, #c9184a);
+  border: none;
+  color: white;
+}
+.form-label{
+  color: #0077b6;
+}
+.x{
+  color: #00b4d8;
+}
