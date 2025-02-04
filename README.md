@@ -1,89 +1,63 @@
-```markdown
-# Code Analyzer Project
+# Code Analyzer
 
-## Overview
+The **Code Analyzer** is an AI-powered web application designed to analyze code snippets, identify potential bugs, and provide suggestions for code improvements. This project combines machine learning algorithms and static code analysis techniques to help developers write cleaner and more efficient code.
 
-The **Code Analyzer** is a full-stack project that includes both a backend and frontend. It analyzes the code provided by users and generates insights. The backend is built using Spring Boot, and the frontend uses HTML, CSS, and JavaScript.
+## Features
 
-## Backend
+- **Code analysis**: Automatically analyzes the provided code and detects issues like bugs, inefficiencies, and bad practices.
+- **AI-driven suggestions**: Provides real-time code improvement suggestions powered by AI.
+- **User-friendly interface**: Built with React for a seamless user experience.
+- **Fast and efficient**: Processes code in real-time for instant feedback.
 
-The backend is built using **Spring Boot**, and it exposes an API for code analysis. The core of the backend is implemented in **Java** and leverages libraries such as **Spring MVC** and **Maven**.
+## Tech Stack
 
-### Features:
-- Code analysis and error detection.
-- RESTful API to interact with the frontend.
+- **Frontend**: HTML, CSS, Java Script
+- **Backend**: Java , Spring Boot , Custom AI algorithms (via Gemini API or other AI service)
+- **Deployment**: GitHub Pages (for frontend), Backend deployment options vary
 
-### Backend Setup
+## Installation
 
-1. Clone the repository:
+To run the project locally, follow these steps:
 
-   ```bash
-   git clone https://github.com/aryan735/Code-Analyzer.git
-   ```
+1. **Clone the repository**:
 
-2. Navigate to the `Ai-Code-Analyzer-Backend` folder:
+    ```bash
+    git clone https://github.com/aryan735/Code-Analyzer.git
+    ```
 
-   ```bash
-   cd Ai-Code-Analyzer-Backend
-   ```
+2. **Navigate to the project directory**:
 
-3. Build the project using Maven:
+    ```bash
+    cd Code-Analyzer
+    ```
 
-   ```bash
-   mvn clean install
-   ```
+3. **Install dependencies**:
 
-4. Run the backend:
+    ```bash
+    npm install
+    ```
 
-   ```bash
-   mvn spring-boot:run
-   ```
+4. **Start the development server**:
 
-The backend will be available on `http://localhost:8080`.
+    ```bash
+    npm start
+    ```
 
-## Frontend
+   This will launch the application in your browser, typically at [http://localhost:3000](http://localhost:3000).
 
-The frontend is a simple UI built with **HTML**, **CSS**, and **JavaScript** that interacts with the backend API to display code analysis results.
+## Usage
 
-### Features:
-- User interface to input code for analysis.
-- Displays results of the analysis received from the backend.
+Once the app is running, you can:
 
-### Frontend Setup
-
-1. Navigate to the `CodeAnalyzer-frontend` folder:
-
-   ```bash
-   cd CodeAnalyzer-frontend
-   ```
-
-2. Open `index.html` in your preferred browser.
-
-The frontend will be available locally once the HTML file is opened.
-
-## Project Structure
-
-```plaintext
-Code-Analyzer/
-├── Ai-Code-Analyzer-Backend/       # Backend project folder
-│   ├── src/                        # Source code
-│   ├── pom.xml                     # Maven project file
-│   └── application.properties      # Backend configuration
-├── CodeAnalyzer-frontend/          # Frontend project folder
-│   ├── index.html                  # Frontend main page
-│   ├── script.js                   # Frontend logic
-│   ├── style.css                   # Frontend styling
-└── README.md                       # Project documentation
-```
+- Input your code into the provided editor.
+- Click on the "Analyze" button to run the analysis.
+- View suggestions and bug fixes provided by the AI-driven analysis.
 
 ## Contributing
 
-If you'd like to contribute to this project, feel free to fork the repository, make changes, and create a pull request. We welcome any improvements or new features!
+We welcome contributions! If you have suggestions, bug fixes, or features to add, feel free to fork the repository and submit a pull request. Please ensure to follow the coding guidelines and write meaningful commit messages.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-```
-
-Feel free to modify the content to fit your exact project details, such as adding specific features or instructions you might have. Let me know if you'd like any changes or additional sections in the README!
